@@ -89,8 +89,6 @@ map.once("load", () => {
     map.on("mouseover", layer.id, (e) => {
       map.getCanvas().style.cursor = "pointer";
       const feature = e.features[0];
-      console.log(feature.properties);
-
       popup
         .setLngLat(e.lngLat)
         .setHTML(
